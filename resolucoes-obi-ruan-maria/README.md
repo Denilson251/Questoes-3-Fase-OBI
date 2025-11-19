@@ -1,7 +1,7 @@
 # 🧠 Resoluções OBI – Dupla Maria de Jesus e Ruan Carlos
 
 Este diretório contém as resoluções desenvolvidas pela dupla **Maria de Jesus e Ruan Carlos** para questões da **1º e 3ª Fase da Olimpíada Brasileira de Informática (OBI)**.  
-As soluções foram implementadas em **Python**, com foco em clareza, lógica e evolução progressiva dos conceitos.
+As soluções foram implementadas em **Python**, com foco em simplicidade, clareza e boa lógica.
 
 ---
 
@@ -14,8 +14,8 @@ Organizar, registrar e compartilhar as resoluções de problemas da OBI, mantend
 ## 📂 Estrutura da Pasta
 
 resolucoes-obi-ruan-maria/
-├── quest01_zero_para_cancelar.py
-├── quest02_cinco.py (em desenvolvimento)
+├── zero_para_cancelar.py
+├── ogro.py
 └── README.md
 
 ---
@@ -47,8 +47,36 @@ Esse é exatamente o comportamento de desfazer/voltar.
 
 Caso queira testar com entrada manual:
 
-```bash
-```python3 quest01_zero_para_cancelar.py
+`bash`
+`python3 quest01_zero_para_cancelar.py`
 
+- Ou usando um arquivo de entrada:
 
+`python3 zero_para_cancelar.py < entrada.txt`
 
+# 🟩 Questão 02 – Ogro
+
+### 🔍 Descrição
+
+O Ogro conta números usando os dedos das mãos:
+
+Cada dedo é representado pela letra I
+
+A mão fechada é representada por *
+
+Regras:
+
+- Para números de 0 a 5, ele usa apenas a mão esquerda;
+- Para números de 6 a 10, a mão esquerda mostra 5 dedos, e a mão direita mostra o restante.
+
+# 🧠 Ideia da Solução
+
+- Se N == 0 → * e *
+
+- Se 1 ≤ N ≤ 5 → "I" * N e *
+
+- Se 6 ≤ N ≤ 10 → "IIIII" e "I" * (N - 5)
+
+# ▶️ Como executar a solução
+
+`python3 ogro.py`

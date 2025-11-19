@@ -37,10 +37,14 @@
 print("___Ajudando o Ogro a aprender a contar usando os dedos___")
 Num = int(input("Ogro: Me diga um número entre 0 e 10: \n"))
 
-# Validação (opcional)
-if Num < 0 or Num > 10:
-    print("Por favor, digite um número entre 0 e 10.")
-    exit()
+# Loop até o Ogro digitar um valor válido
+while True:
+    Num = int(input("Ogro: Me diga um número entre 0 e 10: \n"))
+    
+    if 0 <= Num <= 10:
+        break  # número válido → sai do while
+    else:
+        print("Valor inválido! Digite apenas números entre 0 e 10.\n")
 
 # Caso o número informado for 0 as duas maos ficam fechadas mostrando ' * *'.
 if Num == 0:
