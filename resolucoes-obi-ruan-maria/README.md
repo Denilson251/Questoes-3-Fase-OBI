@@ -13,11 +13,12 @@ Organizar, registrar e compartilhar as resoluções de problemas da OBI, mantend
 
 ## 📂 Estrutura da Pasta
 
-resolucoes-obi-ruan-maria/
+```
+resolucoes-obi-ruan-maria
 ├── zero_para_cancelar.py
 ├── ogro.py
 └── README.md
-
+```
 ---
 
 # 🟦 Questão 01 – Zero para Cancelar
